@@ -27,21 +27,44 @@
 
 // console.log(4 + " - object");
 
-let incr = 10,
-    decr = 10;
+// let incr = 10,
+//     decr = 10;
 
 // ++incr;
 // --decr;
 
-console.log(--incr, ++decr);
+// console.log(--incr, ++decr);
 
-console.log(5%2);
+// console.log(5%2);
 
-console.log(2 + 2 * 2 === 8);
+// console.log(2 + 2 * 2 === 8);
 
 
 
-const isDenis = false,
-        isSa = false;
+// const isDenis = false,
+//         isSa = false;
 
-console.log(isDenis || !isSa);
+// console.log(isDenis || !isSa);
+
+// 1 exercise 
+
+const numberOfFilms =  prompt('How many films did you watched?', '');
+
+// 2 exercise 
+
+const personaMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+// 3 exercise
+
+const lastFilm =  prompt('last film that you watched?', ''),
+        score =  prompt('score for this film?', '');
+
+personaMovieDB.movies[lastFilm] = score;
+
+console.log(personaMovieDB);
