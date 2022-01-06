@@ -62,9 +62,87 @@ const personaMovieDB = {
 
 // 3 exercise
 
-const lastFilm =  prompt('last film that you watched?', ''),
-        score =  prompt('score for this film?', '');
 
-personaMovieDB.movies[lastFilm] = score;
+
+for (let i = 0; i < 2; i++) {
+    const lastFilm =  prompt('last film that you watched?', ''),
+            score =  prompt('score for this film?', '');
+            
+    if (lastFilm != null && score != null && lastFilm != '' && lastFilm.length < 50) {
+        personaMovieDB.movies[lastFilm] = score;
+        console.log('done');
+    } else {
+        console.log('error');
+        i--;
+    }
+    
+    
+}
+
+if (personaMovieDB.count < 10) {
+    console.log('too little');
+} else if (personaMovieDB.count >= 10 && personaMovieDB.count <= 30) {
+    console.log('Sample watcher');
+} else if (personaMovieDB.count >= 30) {
+    console.log('Movie licker');
+} else {
+    console.log('errro');
+}
 
 console.log(personaMovieDB);
+
+// if (4 == 9) {
+//     console.log('ok!');
+// } else {
+//     console.log('error');
+// }
+
+// const num = 51;
+// if (num<49) {
+//     console.log("error");
+// } else if (num>100) {
+//     console.log("Too much");
+// } else {
+//     console.log("Ok!!!");
+// }
+
+// (num === 50) ? console.log("ok") : console.log('Error');
+
+
+// const num = 53;
+// switch (num) {
+//     case 49:
+//         console.log('Error');
+//         break;
+//     case 51:
+//         console.log('Error');
+//         break;
+//     case 50:
+//         console.log('Good');
+//         break;
+//     default:
+//         console.log('Not now');
+//         break;
+// }
+
+// let num = 50;
+
+// while (num <= 55) {
+//     console.log(num);
+//     num++;
+// }
+
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num < 55);
+
+// for (let i = 1; i < 10; i++) {
+//     if (i === 6) {
+//         // break;
+//         continue;
+//     }
+//     console.log(i);
+// }
+
